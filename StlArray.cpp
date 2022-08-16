@@ -31,6 +31,7 @@ int main()
     cout << endl;
     cout << "size of the array" << a.size();
     cout << endl;
-
+    
     return 0;
+
 }
