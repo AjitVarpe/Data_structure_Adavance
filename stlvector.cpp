@@ -19,7 +19,7 @@ int main(){
     // Display element 
     for (size_t i = 0; i < size; i++)
     {
-        cout<<a.at(i)<<" ";
+        cout<<a.at(i)<<"  ";
     }
     
 
