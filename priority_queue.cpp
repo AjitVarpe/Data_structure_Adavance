@@ -20,6 +20,9 @@ int main()
     que.push(50);
     que.push(60);
 
+    priority_queue<int,vector<int>,greater<int>> mini_priority;
+    priority_queue<int,vector<int>,greater<int>> mi_priority;
+    
     // min heap priority queue
     priority_queue<int, vector<int>, greater<int>> mini;
     mini.push(100);
