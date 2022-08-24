@@ -9,7 +9,5 @@ int main(){
     // cin>>d;
     // cout<<"data type of x is "<<typeof(x);
     cout<<endl<<d;
-
-
     return 0;
 }
