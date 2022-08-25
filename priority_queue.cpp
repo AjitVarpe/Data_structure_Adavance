@@ -12,7 +12,7 @@ int main()
 
     // Maxx heap priority
     priority_queue<int> que;
-
+    priority_queue<int,vector<int>,greater<int>> min_que;
     que.push(10);
     que.push(20);
     que.push(30);
