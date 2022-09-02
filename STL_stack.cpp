@@ -33,16 +33,11 @@ int main(){
         cout<<stl.top()<<" ";
         stl.pop();
     }
-    cout<<"Reversed stack is "<<endl;
+    cout<<endl<<"Reversed stack is "<<endl;
     while (!st.empty())
     {
         cout<<st.top()<<" ";
         st.pop();
     }
-    
-
-    
-    
-    
     return 0;
 }
