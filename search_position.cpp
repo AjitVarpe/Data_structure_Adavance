@@ -1,31 +1,26 @@
-#include <bits/stdc++.h>
-#include <limits>
-#include <String>
-using namespace std;
-int search_position(int arr[], int size, int target)
+class Solution
 {
-    int s = 0, e = size - 1;
-    int mid = s + (e - s) / 2;
-    while (s < e)
+public:
+    int searchInsert(vector<int> &nums, int target)
     {
-        if (arr[mid] == target)
+        int s = 0, e = nums.size() - 1;
+        int mid = s + (e - s) / 2;
+        while (s <= e)
         {
-            return mid;
+            if (nums[mid] == target)
+            {
+                return mid;
+            }
+            else if (target > nums[mid])
+            {
+                s = mid + 1;
+            }
+            else if (target < nums[mid])
+            {
+                e = mid - 1;
+            }
+            mid = s + (e - s) / 2;
         }
-        if (target > arr[mid])
-        {
-            s = mid + 1;
-        }
-        else
-        {
-            e = mid+ 1;
-        }
+        return s;
     }
-    return s;
-}
-int main()
-{
-    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
-    cout<<"The Target can be inserted at "<<search_position(arr,10,2);
-    return 0;
-}
+};
