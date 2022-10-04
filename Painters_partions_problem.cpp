@@ -1,15 +1,15 @@
 bool isPosible(vector<int> arr, int n, int m,int mid){
-    int studentCount = 1;
-    int pageSum = 0;
+    int painterCount = 1;
+    int boardSum = 0;
     for(int i= 0;i<arr.size();i++){
-        if(pageSum + arr[i] <= mid){
-            pageSum += arr[i];
+        if(boardSum + arr[i] <= mid){
+            boardSum += arr[i];
         }else{
-            studentCount++;
-            if(studentCount > m || arr[i] > mid ){
+            painterCount++;
+            if(painterCount > m || arr[i] > mid ){
                 return false;
             }
-            pageSum = arr[i];
+            boardSum = arr[i];
         }
     }
     return true;
