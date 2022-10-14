@@ -28,6 +28,5 @@ int main(){
     int n=getlength(ch);
     reverseString(ch,n);
     cout<<"The Reverse of the String is "<<ch<<endl;
-
     return 0;
 }
