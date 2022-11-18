@@ -1,9 +1,8 @@
 #include<bits/stdc++.h>
 #include<limits>
 #include<String>
-#define size 100
-#define top -1
-int arr[size];
+int size = 5;
+int arr[5],top=-1;
 using namespace std;
 void push(int x){
     if(top==size-1){
@@ -24,7 +23,7 @@ void pop(){
     top--;
     return;
 }
-int top(){
+int stack_top(){
     if(top==-1){
         cout<<"Underflow"<<endl;
         return -1;
@@ -34,8 +33,10 @@ int top(){
 
 
 int main(){
-    
-
-
+    // int top = -1;
+  int a= 7;
+  while(a--){
+    push(a);
+  }
     return 0;
 }
