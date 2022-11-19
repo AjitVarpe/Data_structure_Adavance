@@ -34,9 +34,10 @@ int stack_top(){
 
 int main(){
     // int top = -1;
-  int a= 7;
-  while(a--){
-    push(a);
-  }
+    int a=7;
+    while(a--){
+        push(a);
+    }
+    
     return 0;
 }
